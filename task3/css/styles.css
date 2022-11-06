@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: #111;
+    opacity: 0.8;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    color: #000;
+    flex-direction: column;
+    background-color: #D5DAE6;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+.chat-history {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+    padding: 25px;
+    background-image:  linear-gradient(to top, rgba(0, 162, 255, 0.2), rgba(0,162,255,0.2)), 
+    url('../assets/moroccan-flower.png');
+}
+
+.chat-input {
+    background-color: #fff;
+    height: 80px;
+    gap: 10px;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.field {
+    flex-grow: 1;
+    height: 50px;
+    outline: none;
+    color: #000;
+    font-size: 16px;
+    padding: 0 25px;
+    border-radius: 25px;
+    border: none;
+    font-family: inherit;
+    background-color: rgb(213, 219, 224);
+}
+
+
+.btn {
+    width: 180px;
+    border: none;
+    height: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    background-color: #0f64ff;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #2471ff;
+}
+
+.line {
+    margin-bottom: 10px;
+}
+
+.message {
+    line-height: 1.6;
+    background-color: #fff;
+    display: inline-flex;
+    color: #000;
+    align-items: center;
+    position: relative;
+    border-radius: 0 50px 50px 50px;
+    padding: 10px 25px;
+    font-size: 16px;
+    transition: all .2s ease;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .2);
+}
+
+.my-message {
+    color: #fff;
+    background-color: #0f64ff;
+}
+
+
+.info-message {
+    margin: 0;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    display: inline-flex;
+}
+
